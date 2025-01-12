@@ -1,0 +1,275 @@
+﻿/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General body styles */
+body, html {
+    height: 100%;  /* Ensure full height for the body and HTML */
+    width: 100%;   /* Ensure full width for the body and HTML */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+.mapouter{
+    margin-left: 130px;
+}
+/* Centered container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto; /* Ensure the container is centered */
+    padding: 20px;
+}
+
+/* Header styles */
+.header {
+    background-color: #4CAF50;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;  /* Ensure the header spans the full width */
+}
+
+.header img {
+    max-width: 150px;
+    height: auto;
+}
+
+#he {
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.cardmargin{
+    margin-left: 15px;
+}
+/* Navbar styles */
+.navbar {
+    background-color: #333;
+    display: flex;
+    padding: 10px;
+    width: 100%; /* Ensure the navbar spans the full width */
+}
+
+.navbar .nav-link {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: background-color 0.3s;
+}
+
+.navbar .nav-link:hover {
+    background-color: #45a049;
+    border-radius: 5px;
+}
+
+/* Card styles */
+.card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    margin-bottom: 20px;
+    margin-left: 15px;  /* Remove the left margin */
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Button styles */
+.btn {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #45a049;
+}
+
+/* Centering the form container */
+.center-div-form {
+    margin: 20px auto;
+    background: #fff;
+    border-radius: 10px;
+    padding: 30px 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    text-align: center;
+}
+
+/* Table Styling */
+#table {
+    margin: auto;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+}
+
+/* Input fields */
+input.form-control {
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 14px;
+    transition: all 0.3s ease-in-out;
+}
+
+input.form-control:focus {
+    border-color: #ff6f61;
+    box-shadow: 0 0 5px rgba(255, 111, 97, 0.5);
+    outline: none;
+}
+
+/* Login Button */
+.btn.pink-background {
+    background-color: #ff6f61;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+    width: 100%;
+    text-align: center;
+}
+
+.btn.pink-background:hover {
+    background-color: #e5574d;
+}
+
+/* Sign-up Link */
+.pink-text {
+    color: #ff6f61;
+    text-decoration: none;
+}
+
+.pink-text:hover {
+    text-decoration: underline;
+}
+
+/* Label for Error Messages */
+label[runat="server"] {
+    font-size: 14px;
+    margin-top: 10px;
+    display: block;
+    text-align: center;
+}
+
+.search-input {
+    height: 40px; /* Increase the height of the search input */
+    padding: 10px; /* Add padding inside the input */
+    font-size: 16px; /* Increase font size for better readability */
+    margin-right: 10px; /* Space between input and button */
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.search-btn {
+    height: 40px; /* Match the height of the input field */
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.sort-bar {
+    margin-bottom: 40px;
+}
+
+/* Table styling */
+.table {
+    margin-top: 20px;
+    width: 100%;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+}
+
+    .table th, .table td {
+        padding: 12px 15px;
+        text-align: left;
+        border: 1px solid #ddd;
+    }
+
+    .table th {
+        background-color: forestgreen;
+        color: white;
+    }
+
+    .table tbody tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+
+    .table tbody tr:hover {
+        background-color: #d6eaf7;
+    }
+
+    .table td {
+        font-size: 1.1rem;
+    }
+
+    .table .strong {
+        font-weight: bold;
+    }
+
+/* Image Styling */
+.img-fluid {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer styles */
+footer {
+    background: #4CAF50;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        margin-bottom: 15px;
+    }
+}
